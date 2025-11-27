@@ -1,0 +1,235 @@
+@import "tailwindcss";
+/* Removed Google Fonts import - now loaded via next/font in layout.tsx */
+
+/* Stinger Font - Load from local file if available */
+@font-face {
+  font-family: 'Stinger';
+  src: url('/fonts/Stinger-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('/fonts/Stinger-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Stinger', var(--font-raleway), system-ui, sans-serif;
+  background: #050D36;
+  color: #ffffff;
+  overflow-x: hidden;
+  letter-spacing: 0.08em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Stinger', var(--font-raleway), sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+}
+
+p, span, a, li, button, input, textarea {
+  letter-spacing: 0.09em;
+}
+
+:root {
+  --primary-dark: #050D36;
+  --primary-blue: #104CBA;
+  --primary-purple: #913BFF;
+  --text-gray: #777C90;
+}
+.counter{
+  font-family: system-ui, sans-serif !important;
+}
+
+/* Interactive background animations - GPU Optimized */
+@keyframes float {
+  0%, 100% {
+    transform: translate3d(0, 0px, 0);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translate3d(0px, 0px, 0);
+  }
+  25% {
+    transform: translate3d(10px, -5px, 0);
+  }
+  50% {
+    transform: translate3d(0px, -10px, 0);
+  }
+  75% {
+    transform: translate3d(-10px, -5px, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Apply animations to background elements - GPU Optimized */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.animate-drift {
+  animation: drift 4s ease-in-out infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Additional animations for About page - GPU Optimized */
+@keyframes spin-slow {
+  from {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Hide scrollbar while keeping scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-reverse {
+  animation-direction: reverse;
+}
+
+/* Custom select styling (attempt to unify dropdown colors across browsers) */
+.dark-select {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border-color: rgba(145, 59, 255, 0.3);
+}
+.dark-select:focus {
+  outline: none;
+  border-color: #913BFF;
+}
+/* Some browsers honor option styling; fallback if supported */
+.dark-select option {
+  background-color: #0B1542;
+  color: #ffffff;
+}
+
+/* Advanced gradient animations for Hero section */
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradient-x-reverse {
+  0%, 100% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 300% 300%;
+  animation: gradient-x 3s ease infinite;
+  will-change: background-position;
+}
+
+.animate-gradient-x-reverse {
+  background-size: 300% 300%;
+  animation: gradient-x-reverse 3s ease infinite;
+  will-change: background-position;
+}
+
+.bg-300\% {
+  background-size: 300% 100%;
+}
+
+/* Floating particles with staggered delays */
+.particle-delay-1 { animation-delay: 0.5s; }
+.particle-delay-2 { animation-delay: 1s; }
+.particle-delay-3 { animation-delay: 1.5s; }
+.particle-delay-4 { animation-delay: 2s; }
+.particle-delay-5 { animation-delay: 2.5s; }
+
+/* Enhanced glow effects */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(145, 59, 255, 0.3), 0 0 40px rgba(145, 59, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(145, 59, 255, 0.6), 0 0 80px rgba(145, 59, 255, 0.3);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Performance optimization: Reduce animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-drift,
+  .animate-glow,
+  .animate-spin-slow,
+  .animate-gradient-x,
+  .animate-gradient-x-reverse,
+  .animate-pulse-glow {
+    animation: none !important;
+  }
+}
+
+/* GPU acceleration utility class */
+.gpu-accelerated {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}

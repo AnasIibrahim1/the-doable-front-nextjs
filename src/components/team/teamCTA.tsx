@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { memo } from 'react';
 import FloatingStars from '../ui/floatingStars';
-import FloatingCircles from '../ui/floatingCircles';
 import StartApplyCTA from '@/components/applyJob/StartApplyCTA';
 
 function TeamCTA() {

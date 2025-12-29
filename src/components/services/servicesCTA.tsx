@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { memo } from 'react';
 import StartProjectCTA from '@/components/requestProject/StartProjectCTA';
-import FloatingCircles from '../ui/floatingCircles';
 import FloatingStars from '../ui/floatingStars';
 
 function ServicesCTA() {

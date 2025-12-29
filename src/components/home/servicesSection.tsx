@@ -11,10 +11,6 @@ const FloatingStars = dynamic(() => import('../ui/floatingStars'), {
   ssr: false,
 });
 
-const FloatingCircles = dynamic(() => import('../ui/floatingCircles'), {
-  ssr: false,
-});
-
 
 function ServicesSection() {
   return (

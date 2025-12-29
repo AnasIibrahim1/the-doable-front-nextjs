@@ -14,10 +14,6 @@ const FloatingStars = dynamic(() => import('../ui/floatingStars'), {
   ssr: false,
 });
 
-const FloatingCircles = dynamic(() => import('../ui/floatingCircles'), {
-  ssr: false,
-});
-
 const AnimatedWavyLines = dynamic(() => import('../ui/animatedWavyLines'), {
   ssr: false,
 });

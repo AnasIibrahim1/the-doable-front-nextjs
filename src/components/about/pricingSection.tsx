@@ -6,8 +6,6 @@ import Button from '@/components/ui/button';
 import { FaCheck } from 'react-icons/fa';
 import SectionHeader from '../ui/sectionHeader';
 import AnimatedWavyLines from '../ui/animatedWavyLines';
-import FloatingCircles from '../ui/floatingCircles';
-import FloatingStars from '../ui/floatingStars';
 
 interface PricingCardProps {
   plan: {

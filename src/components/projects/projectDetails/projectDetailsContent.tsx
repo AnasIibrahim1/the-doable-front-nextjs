@@ -60,10 +60,6 @@ const FloatingStars = dynamic(() => import('../../ui/floatingStars'), {
   ssr: false,
 });
 
-const FloatingCircles = dynamic(() => import('../../ui/floatingCircles'), {
-  ssr: false,
-});
-
 interface ProjectDetailsContentProps {
   project: CaseStudy;
 }

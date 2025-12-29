@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Service, services } from '@/data/services';
+import { Service } from '@/data/services';
 import HeroFloatingElements from '@/components/about/heroFloatingElements';
 import ScrollIndicator from '@/components/ui/scrollIndicator';
 import FloatingWord from '@/components/ui/floatingWord';

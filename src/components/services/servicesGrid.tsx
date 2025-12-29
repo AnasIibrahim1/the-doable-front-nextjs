@@ -9,7 +9,6 @@ import ServiceCard from './serviceCard';
 import SectionHeader from '../ui/sectionHeader';
 
 import FloatingStars from '../ui/floatingStars';
-import FloatingCircles from '../ui/floatingCircles';
 
 function ServicesGrid() {
   const { ref, inView } = useInView({

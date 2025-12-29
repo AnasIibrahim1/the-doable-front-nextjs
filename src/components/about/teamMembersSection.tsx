@@ -6,8 +6,6 @@ import { useRouter } from 'next/navigation';
 import { teamMembers } from '@/data/teamMembers';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import SectionHeader from '../ui/sectionHeader';
-import FloatingCircles from '../ui/floatingCircles';
-import FloatingStars from '../ui/floatingStars';
 
 interface TeamCardProps {
   member: {

@@ -3,7 +3,6 @@
 import HowItWorksHeader from './howItWorks/howItWorksHeader';
 import HowItWorksGrid from './howItWorks/howItWorksGrid';
 import FloatingStars from '../ui/floatingStars';
-import FloatingCircles from '../ui/floatingCircles';
 
 export default function HowItWorks() {
   return (

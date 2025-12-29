@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { teamMembers } from '@/data/teamMembers';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import SectionHeader from '../ui/sectionHeader';
-import AnimatedGradients from '../ui/animatedGradients';
 import FloatingCircles from '../ui/floatingCircles';
 import FloatingStars from '../ui/floatingStars';
 import { useRouter } from 'next/navigation';
@@ -111,7 +110,6 @@ export default function TeamMembersSection() {
     <section className="py-24 relative">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050D36] to-transparent" />
-      <AnimatedGradients />
       <FloatingCircles />
       <FloatingStars />
       <div className="max-w-7xl mx-auto max-[1280px]:px-8 relative z-10">

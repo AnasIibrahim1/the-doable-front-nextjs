@@ -7,7 +7,6 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { teamMembers } from '@/data/teamMembers';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import AnimatedGradients from '@/components/ui/animatedGradients';
 import FloatingCircles from '@/components/ui/floatingCircles';
 import FloatingStars from '@/components/ui/floatingStars';
 
@@ -54,7 +53,6 @@ export default function TeamMemberDetails({ params }: { params: Promise<{ slug: 
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#913BFF]/20 via-transparent to-transparent" />
         
         {/* Animated Background Elements */}
-        <AnimatedGradients />
         <FloatingCircles />
         <FloatingStars />
 

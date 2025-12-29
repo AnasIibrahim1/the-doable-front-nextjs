@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { memo } from 'react';
-import AnimatedGradients from '../ui/animatedGradients';
 import FloatingStars from '../ui/floatingStars';
 import FloatingCircles from '../ui/floatingCircles';
 import StartApplyCTA from '@/components/applyJob/StartApplyCTA';
@@ -15,10 +14,8 @@ function TeamCTA() {
 
       {/* Animated background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <AnimatedGradients />
         <FloatingStars />
-        <FloatingCircles />
-      </div>
+9      </div>
 
       <div className="max-w-4xl mx-auto max-[1280px]:px-8 relative z-10">
         <motion.div

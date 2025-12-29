@@ -8,9 +8,7 @@ import AnnouncementBanner from './hero/announcementBanner';
 import ScrollIndicator from '../ui/scrollIndicator';
 
 // Lazy load heavy animation components - SSR disabled to avoid hydration issues
-const AnimatedGradients = dynamic(() => import('../ui/animatedGradients'), {
-  ssr: false,
-});
+
 
 const FloatingStars = dynamic(() => import('../ui/floatingStars'), {
   ssr: false,
@@ -48,11 +46,9 @@ function HeroSection() {
       {/* Load animations only when section is visible for better performance */}
       {inView && (
         <>
-          <AnimatedGradients />
           
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <FloatingStars />
-            <FloatingCircles />
             <AnimatedWavyLines />
           </div>
 

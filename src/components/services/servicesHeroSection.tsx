@@ -110,11 +110,10 @@ function ServicesHeroSection() {
         />
 
         {/* Floating Particles System */}
-        {Array.from({ length: 20 }).map((_, i) => {
+        {Array.from({ length: 18 }).map((_, i) => {
           // Pre-calculated values for consistent rendering
           const particleData = [
             { left: 15, top: 25, x: 5, duration: 9.2, delay: 0.3 },
-            { left: 85, top: 15, x: -8, duration: 10.5, delay: 1.2 },
             { left: 45, top: 75, x: 3, duration: 8.8, delay: 0.8 },
             { left: 25, top: 45, x: -5, duration: 11.1, delay: 1.5 },
             { left: 75, top: 65, x: 7, duration: 9.7, delay: 0.5 },
@@ -132,7 +131,7 @@ function ServicesHeroSection() {
             { left: 70, top: 50, x: 7, duration: 8.7, delay: 0.1 },
             { left: 50, top: 80, x: -3, duration: 10.9, delay: 1.9 },
             { left: 10, top: 30, x: 6, duration: 9.3, delay: 0.8 },
-            { left: 85, top: 65, x: -7, duration: 10.6, delay: 1.0 },
+
           ];
           
           const data = particleData[i % 20];

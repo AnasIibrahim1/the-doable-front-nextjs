@@ -8,7 +8,6 @@ import { useInView } from 'react-intersection-observer';
 import ServiceCard from './serviceCard';
 import SectionHeader from '../ui/sectionHeader';
 
-import AnimatedGradients from '../ui/animatedGradients';
 import FloatingStars from '../ui/floatingStars';
 import FloatingCircles from '../ui/floatingCircles';
 
@@ -26,9 +25,7 @@ function ServicesGrid() {
       {inView && (
         <>
           <div className="absolute inset-0 pointer-events-none">
-            <AnimatedGradients />
             <FloatingStars />
-            <FloatingCircles />
           </div>
         </>
       )}

@@ -9,9 +9,7 @@ import ProjectCard from './projectCard';
 import SectionHeader from '../ui/sectionHeader';
 
 // Lazy load background animations
-const AnimatedGradients = dynamic(() => import('../ui/animatedGradients'), {
-  ssr: false,
-});
+
 
 const FloatingStars = dynamic(() => import('../ui/floatingStars'), {
   ssr: false,
@@ -51,9 +49,7 @@ function ProjectsGrid() {
       {inView && (
         <>
           <div className="absolute inset-0 pointer-events-none">
-            <AnimatedGradients />
             <FloatingStars />
-            <FloatingCircles />
           </div>
         </>
       )}

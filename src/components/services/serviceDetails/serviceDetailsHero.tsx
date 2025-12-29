@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Service } from '@/data/services';
+import { Service, services } from '@/data/services';
 import HeroFloatingElements from '@/components/about/heroFloatingElements';
 import ScrollIndicator from '@/components/ui/scrollIndicator';
 import FloatingWord from '@/components/ui/floatingWord';
@@ -114,10 +114,10 @@ export default function ServiceDetailsHero({ service }: ServiceDetailsHeroProps)
         />
 
         {/* Floating Particles System */}
-        {Array.from({ length: 20 }).map((_, i) => {
+        {Array.from({ length: 18 }).map((_, i) => {
           const particleData = [
             { left: 15, top: 25, x: 5, duration: 9.2, delay: 0.3 },
-            { left: 85, top: 15, x: -8, duration: 10.5, delay: 1.2 },
+
             { left: 45, top: 75, x: 3, duration: 8.8, delay: 0.8 },
             { left: 25, top: 45, x: -5, duration: 11.1, delay: 1.5 },
             { left: 75, top: 65, x: 7, duration: 9.7, delay: 0.5 },
@@ -135,7 +135,7 @@ export default function ServiceDetailsHero({ service }: ServiceDetailsHeroProps)
             { left: 70, top: 50, x: 7, duration: 8.7, delay: 0.1 },
             { left: 50, top: 80, x: -3, duration: 10.9, delay: 1.9 },
             { left: 10, top: 30, x: 6, duration: 9.3, delay: 0.8 },
-            { left: 85, top: 65, x: -7, duration: 10.6, delay: 1.0 },
+
           ];
           
           const data = particleData[i % 20];
@@ -256,7 +256,7 @@ export default function ServiceDetailsHero({ service }: ServiceDetailsHeroProps)
           {/* Spectacular Main Title */}
           <motion.div className="relative mb-8">
             <motion.h1
-              className="text-6xl md:text-8xl lg:text-9xl font-bold mb-4 relative z-10"
+              className="text-4xl md:text-8xl lg:text-9xl font-bold mb-4 relative z-10"
               initial={{ opacity: 0, scale: 0.5, rotateX: -90 }}
               animate={{ opacity: 1, scale: 1, rotateX: 0 }}
               transition={{ 
@@ -267,10 +267,32 @@ export default function ServiceDetailsHero({ service }: ServiceDetailsHeroProps)
                 damping: 12
               }}
             >
-              <span className="bg-gradient-to-r from-white via-[#913BFF] to-[#104CBA] bg-clip-text text-transparent bg-300% animate-gradient-x">
+              
+              <motion.span
+                className="bg-gradient-to-l from-[#104CBA] via-white to-[#913BFF] bg-clip-text text-transparent bg-300% animate-gradient-x-reverse"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 1 }}
+              >
                 {service.title}
-              </span>
+              </motion.span>
             </motion.h1>
+            
+            {/* Floating text shadow */}
+            <motion.div
+              className="absolute inset-0 text-6xl md:text-8xl lg:text-9xl font-bold text-[#913BFF]/10 blur-sm"
+              animate={{
+                y: [0, -5, 0],
+                scale: [1, 1.02, 1],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: 'easeInOut',
+              }}
+            >
+              {service.title}
+            </motion.div>
             
             {/* Floating text shadow */}
             <motion.div

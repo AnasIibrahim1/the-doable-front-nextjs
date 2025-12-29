@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import StartProjectCTA from '@/components/requestProject/StartProjectCTA';
 import FloatingCircles from '../ui/floatingCircles';
 import FloatingStars from '../ui/floatingStars';
-import AnimatedGradients from '../ui/animatedGradients';
 
 export default function CTASection() {
   return (
@@ -14,9 +13,7 @@ export default function CTASection() {
       
       {/* Animated background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <AnimatedGradients />
         <FloatingStars />
-        <FloatingCircles />
       </div>
 
       <div className="max-w-4xl mx-auto max-[1280px]:px-8 relative z-10">

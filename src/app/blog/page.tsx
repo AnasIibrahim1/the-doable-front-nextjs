@@ -5,7 +5,6 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { articles } from '@/data/articles';
 import ArticleCard from '@/components/home/articles/articleCard';
-import AnimatedGradients from '@/components/ui/animatedGradients';
 import FloatingCircles from '@/components/ui/floatingCircles';
 import FloatingStars from '@/components/ui/floatingStars';
 import FloatingWord from '@/components/ui/floatingWord';
@@ -96,7 +95,6 @@ export default function BlogPage(): React.JSX.Element {
         />
 
         {/* Animated Background Elements */}
-        <AnimatedGradients />
         <FloatingCircles />
         <FloatingStars />
 
@@ -272,7 +270,6 @@ export default function BlogPage(): React.JSX.Element {
       {/* Articles Grid Section */}
       <section className="py-24 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050D36] to-transparent" />
-        <AnimatedGradients />
         <FloatingCircles />
         <FloatingStars />
         

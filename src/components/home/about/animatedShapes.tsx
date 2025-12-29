@@ -90,8 +90,7 @@ export default function AnimatedShapes() {
         />
       </svg>
 
-      {/* Glowing effect behind */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#104CBA]/30 to-[#913BFF]/30 z-[-1] rounded-full blur-3xl" />
+
     </motion.div>
   );
 }

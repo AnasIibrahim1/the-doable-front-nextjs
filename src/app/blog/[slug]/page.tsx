@@ -6,7 +6,6 @@ import { use } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { articles } from '@/data/articles';
-import AnimatedGradients from '@/components/ui/animatedGradients';
 import FloatingCircles from '@/components/ui/floatingCircles';
 import FloatingStars from '@/components/ui/floatingStars';
 import FloatingWord from '@/components/ui/floatingWord';
@@ -112,7 +111,6 @@ export default function BlogDetailsPage({ params }: { params: Promise<{ slug: st
         <div className="absolute inset-0 bg-gradient-to-t from-[#913BFF]/10 via-transparent to-[#104CBA]/10" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#913BFF]/20 via-transparent to-transparent" />
         {/* Animated Backgrounds */}
-        <AnimatedGradients />
         <FloatingCircles />
         <FloatingStars />
         <FloatingWord word="Articles" />

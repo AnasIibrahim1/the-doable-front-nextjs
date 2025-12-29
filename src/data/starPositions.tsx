@@ -14,7 +14,6 @@ export interface StarPositions {
 export const starPositions: StarPositions = {
   large: [
     { id: 0, left: 15, top: 20, delay: 0.5 },
-    { id: 1, left: 85, top: 30, delay: 1.2 },
     { id: 2, left: 25, top: 70, delay: 2.1 },
     { id: 3, left: 75, top: 80, delay: 0.8 },
     { id: 4, left: 45, top: 15, delay: 1.8 },
@@ -32,7 +31,6 @@ export const starPositions: StarPositions = {
     { id: 6, left: 5, top: 90, delay: 2.3 },
     { id: 7, left: 70, top: 40, delay: 1.9 },
     { id: 8, left: 30, top: 50, delay: 0.9 },
-    { id: 9, left: 85, top: 15, delay: 2.7 },
     { id: 10, left: 15, top: 65, delay: 1.4 },
     { id: 11, left: 55, top: 95, delay: 0.6 },
     { id: 12, left: 40, top: 30, delay: 2.1 },

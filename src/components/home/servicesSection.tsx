@@ -15,17 +15,12 @@ const FloatingCircles = dynamic(() => import('../ui/floatingCircles'), {
   ssr: false,
 });
 
-const AnimatedGradients = dynamic(() => import('../ui/animatedGradients'), {
-  ssr: false,
-});
 
 function ServicesSection() {
   return (
     <section className="py-24 relative">
       <div className="absolute inset-0 pointer-events-none">
         <FloatingStars />
-        <FloatingCircles />
-        <AnimatedGradients />
       </div>
 
       {/* Background elements */}

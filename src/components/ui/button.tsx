@@ -57,7 +57,7 @@ export default function Button({
       text-white hover:bg-white/10 rounded-full
     `,
     custom : `
-    bg-[#050d36]
+    bg-[#050d36] rounded-full font-semibold border border-[#061358]
     `
   };
 

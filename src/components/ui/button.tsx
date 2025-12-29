@@ -56,6 +56,9 @@ export default function Button({
     ghost: `
       text-white hover:bg-white/10 rounded-full
     `,
+    custom : `
+    bg-[#050d36]
+    `
   };
 
   // Base classes

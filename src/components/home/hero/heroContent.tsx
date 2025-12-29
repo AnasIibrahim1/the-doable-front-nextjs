@@ -78,7 +78,7 @@ export default function HeroContent() {
         
         <Button 
           href="/contact" 
-          variant="secondary" 
+          variant="custom" 
           size="lg" 
           icon="💬"
           floating={true}

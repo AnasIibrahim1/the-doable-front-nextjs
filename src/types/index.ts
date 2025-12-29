@@ -31,7 +31,7 @@ export interface PaginationProps {
 export interface ButtonProps {
   children: React.ReactNode;
   href?: string;
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'custom';
   size?: 'sm' | 'md' | 'lg';
   className?: string;
   onClick?: () => void;
